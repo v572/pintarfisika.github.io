@@ -1,0 +1,41 @@
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #23a15c;
+}
+
+/* Navbar links */
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+/* Dropdown container (hidden by default) */
+.Materi {
+  position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.Materi-content {
+  display: none;
+  position: absolute;
+  background-color: #757ef3;
+  min-width: 200px;
+}
+
+/* Show the dropdown content when the dropdown button is hovered over */
+.Materi:hover .Materi-content {
+  display: block;
+}

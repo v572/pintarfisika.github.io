@@ -1,0 +1,25 @@
+.enter {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Button styles */
+  .enter .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+  }
+  
+  /* Image styles */
+  .enter .button img {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: #0071f8;
+    border-radius: 50%;
+    transition: all .3s;
+  }

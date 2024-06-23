@@ -1,0 +1,25 @@
+.icon {
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Button styles */
+  .icon .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px;
+  }
+  
+  /* Image styles */
+  .icon .button img {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: #0071f8;
+    border-radius: 50%;
+    transition: all .3s;
+  }
