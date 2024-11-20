@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>Pintar Fisika</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="fontawesome.css">
+    <link rel="stylesheet" href="umum.css">
+    <link rel="stylesheet" href="cabangnav.css">
+    <link rel="stylesheet" href="latsol.css">
+    <style>
+
+        h3 {
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        
+        /* Header area */
+        .header-area {
+            position: fixed;
+            width: 100%;
+            background-color: transparent;
+            z-index: 1000;
+            height: 100px;
+            line-height: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-area.scrolled {
+            background-color: rgba(0, 0, 0, 0.8); /* Warna header saat scroll */
+        }
+
+        /* Page heading */
+        .page-heading {
+            padding: 100px 0 20px;
+            text-align: center;
+            color: #343a40;
+        }
+
+        .page-heading h3 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-top: 80px; /* Memberi jarak agar tidak tertutup header */
+        }
+
+        @media (max-width: 768px) {
+            .header-area {
+                height: 60px;
+                line-height: 60px;
+            }
+
+            .page-heading {
+                padding-top: 100px;
+            }
+
+            .page-heading h3 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="home.html" class="logo">
+                            <img src="logobaru.png" alt="" style="width: 158px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="petunjuk.html" class="nav-link">Petunjuk</a></li>
+                            <li class="nav-item"><a href="tujuan.html" class="nav-link active">Tujuan</a></li>
+                            <li class="nav-item"><a href="materi.html" class="nav-link">Materi</a></li>
+                            <li class="nav-item"><a href="latihan.html" class="nav-link">Soal</a></li>
+                            <li class="nav-item"><a href="praktik.html" class="nav-link">Simulasi</a></li>
+                            <li class="nav-item"><a href="bertanya.html" class="nav-link">Diskusi</a></li>
+                            <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
+                        </ul>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Tujuan</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container telo mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="image text-center">
+                    <img src="tujuanbaru1.png" alt="Tujuan 1" class="img-fluid mb-2">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="image text-center">
+                    <img src="tujuanbaru2.png" alt="Tujuan 2" class="img-fluid mb-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Menambahkan class "scrolled" saat scroll
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector(".header-area");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>

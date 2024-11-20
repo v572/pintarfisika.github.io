@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap" rel="stylesheet">
+    <title>Pintar Fisika</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="fontawesome.css">
+    <link rel="stylesheet" href="umum.css">
+    <link rel="stylesheet" href="cabangnav.css">
+    <link rel="stylesheet" href="latsol.css">
+    <style>
+
+        h3 {
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        
+         /* Header area */
+         /* Header area */
+         .header-area {
+            position: fixed;
+            width: 100%;
+            background-color: transparent;
+            z-index: 1000;
+            height: 100px;
+            line-height: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-area.scrolled {
+            background-color: rgba(0, 0, 0, 0.8); /* Warna header saat scroll */
+        }
+
+        /* Page heading */
+        .page-heading {
+            padding: 100px 0 20px;
+            text-align: center;
+            color: #343a40;
+        }
+
+        .page-heading h3 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-top: 80px; /* Memberi jarak agar tidak tertutup header */
+        }
+
+        @media (max-width: 768px) {
+            .header-area {
+                height: 60px;
+                line-height: 60px;
+            }
+
+            .page-heading {
+                padding-top: 100px;
+            }
+
+            .page-heading h3 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <div class="container">
+            <nav class="main-nav">
+                <!-- Logo -->
+                <a href="home.html" class="logo">
+                    <img src="logobaru.png" alt="Logo" style="width: 150px;">
+                </a>
+                <!-- Menu -->
+                <ul class="nav">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="petunjuk.html" class="nav-link active">Petunjuk</a></li>
+                    <li class="nav-item"><a href="tujuan.html" class="nav-link">Tujuan</a></li>
+                    <li class="nav-item"><a href="materi.html" class="nav-link">Materi</a></li>
+                    <li class="nav-item"><a href="latihan.html" class="nav-link">Soal</a></li>
+                    <li class="nav-item"><a href="praktik.html" class="nav-link">Simulasi</a></li>
+                    <li class="nav-item"><a href="bertanya.html" class="nav-link">Diskusi</a></li>
+                    <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Page Heading Start ***** -->
+    <div class="page-heading">
+        <div class="container">
+            <h3>Petunjuk</h3>
+        </div>
+    </div>
+    <!-- ***** Page Heading End ***** -->
+
+    <!-- ***** Content Start ***** -->
+    <div class="container telo mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="image text-center">
+                    <img src="tunjuk1.png" alt="Petunjuk 1" class="img-fluid mb-4">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="image text-center">
+                    <img src="tunjuk2.png" alt="Petunjuk 2" class="img-fluid mb-4">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="image text-center">
+                    <img src="tunjuk3.png" alt="Petunjuk 3" class="img-fluid mb-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Content End ***** -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add 'scrolled' class to header when scrolling
+        $(window).on("scroll", function () {
+            if ($(this).scrollTop() > 50) {
+                $(".header-area").addClass("scrolled");
+            } else {
+                $(".header-area").removeClass("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>

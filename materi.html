@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>Pintar Fisika</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="fontawesome.css">
+    <link rel="stylesheet" href="umum.css">
+    <link rel="stylesheet" href="cabangnav.css">
+    <link rel="stylesheet" href="materi.css">
+    <link rel="stylesheet" href="enter.css">
+
+    <style>
+        /* Custom Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+        }
+        h3 {
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        
+        /* Header Styling */
+        .header-area {
+            position: fixed;
+            width: 100%;
+            background-color: transparent;
+            z-index: 1000;
+            height: 100px;
+            line-height: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-area.scrolled {
+            background-color: rgba(0, 0, 0, 0.8); /* Warna header saat scroll */
+        }
+
+        .logo img {
+            width: 158px;
+        }
+
+        /* Navigation Menu */
+    
+
+        /* Page Heading */
+        .page-heading {
+            padding: 100px 0 20px;
+            text-align: center;
+            color: #343a40;
+        }
+
+        .page-heading h3 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-top: 80px; /* Memberi jarak agar tidak tertutup header */
+        }
+
+        /* Button Images */
+        .button .image img {
+            transition: transform 0.3s;
+            width: 100%;
+        }
+
+        .button:hover .image img {
+            transform: scale(1.1);
+        }
+
+        /* Materi content centering */
+        .materi-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Vertical Centering */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .materi-content .col-6 {
+            margin: 10px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .header-area {
+                height: 50px;
+            }
+
+            .logo img {
+                width: 120px;
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-item {
+                margin: 5px 0;
+            }
+
+            .page-heading {
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- Logo Start -->
+                        <a href="home.html" class="logo">
+                            <img src="logobaru.png" alt="">
+                        </a>
+                        <!-- Logo End -->
+
+                        <!-- Menu Start -->
+                        <ul class="nav">
+                            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="petunjuk.html" class="nav-link">Petunjuk</a></li>
+                            <li class="nav-item"><a href="tujuan.html" class="nav-link">Tujuan</a></li>
+                            <li class="nav-item"><a href="materi.html" class="nav-link active">Materi</a></li>
+                            <li class="nav-item"><a href="latihan.html" class="nav-link">Soal</a></li>
+                            <li class="nav-item"><a href="praktik.html" class="nav-link">Simulasi</a></li>
+                            <li class="nav-item"><a href="bertanya.html" class="nav-link">Diskusi</a></li>
+                            <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
+                        </ul>
+                        <!-- Menu End -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- Page Heading -->
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>MATERI</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materi Content (Centered) -->
+    <div class="container materi-content">
+        
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="pendahuluan.html">
+                    <div class="button">
+                        <div class="image">
+                            <img src="pendahuluan.png" alt="Pendahuluan" class="img-fluid">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="hidrostatis.html">
+                    <div class="button">
+                        <div class="image">
+                            <img src="hidrostatis.png" alt="Hidrostatis Fluida Statis" class="img-fluid">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="pascal.html">
+                    <div class="button">
+                        <div class="image">
+                            <img src="pascal.png" alt="Pascal" class="img-fluid">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="archimedes.html">
+                    <div class="button">
+                        <div class="image">
+                            <img src="archimedes.png" alt="Archimedes" class="img-fluid">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="penerapan.html">
+                    <div class="button">
+                        <div class="image">
+                            <img src="penerapan.png" alt="Penerapan" class="img-fluid">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="isotope.min.js"></script>
+    <script src="owl-carousel.js"></script>
+    <script src="counter.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>
